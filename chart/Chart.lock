@@ -1,0 +1,6 @@
+dependencies:
+- name: dep-chart
+  repository: file://../dep-chart
+  version: 0.1.0
+digest: sha256:e899dbd623bbf9e80e4735f3dc9ecb88b25ebb44b6c2d14506454716c89b8baa
+generated: "2024-08-05T12:03:43.6121725+03:00"

@@ -1,0 +1,16 @@
+
+  {{- $stage:= .stage}}
+  {{- range  $key:= keys .Values.services}}
+  {{- range  $service:= ( get $.Values.services $key)}}
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ $.Values.config.name}}-{{$key}}-{{$service}}
+  namespace: {{ $.Values.namespace }}
+  labels:
+    group: {{ "Gomaaa" | print "hello-"}}
+
+{{- include "js-Template" $.Values }}
+---
+{{- end}}
+{{- end}}

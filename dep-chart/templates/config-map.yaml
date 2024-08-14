@@ -1,0 +1,4 @@
+{{- define "js-Template"}}
+data:
+  age: {{ .test }}
+{{- end}}

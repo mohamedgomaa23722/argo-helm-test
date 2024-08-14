@@ -1,0 +1,15 @@
+config:
+  name: helm-course
+
+namespace: helm-test-ns
+group: helm-group
+
+services:
+  ms:
+    - order-service
+  fs:
+    - payment-service
+    - paymob-service
+  js:
+    - user-service
+    - test-service
